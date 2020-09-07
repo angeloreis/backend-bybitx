@@ -4,8 +4,10 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "dev": "nodemon src/server.ts",
-    "build": "sucrase ./src -d ./dist --transforms typescript,imports"
+    "dev": "nodemon src/server.ts --ignore __tests__",
+    "test": "jest",
+    "build": "sucrase ./src -d ./dist --transforms typescript,imports",
+    "start": "node dist/server.js"
   },
   "devDependencies": {
     "@types/cors": "^2.8.7",
