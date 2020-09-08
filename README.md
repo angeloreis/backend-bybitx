@@ -36,7 +36,12 @@ padrão:
 
 ### Rotas criadas
 /videogame (GET, POST)
+
 /videogame/:id (GET, PUT, DELETE)
+
 /game (GET, POST)
+
 /game/:id (GET, PUT, DELETE)
+
 /game/videogame/:id (GET)
+
